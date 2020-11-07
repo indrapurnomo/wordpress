@@ -1,5 +1,7 @@
-FROM wordpress:4.8-apache
+from php:7.2-apache
 
-WORKDIR /var/www/html
+run docker-php-ext-install mysqli
 
-#COPY wp-config.php /var/www/html/
+workdir /var/www/html
+
+copy . .
