@@ -39,7 +39,7 @@ spec:
             - name: DB_RDS
               value:"indra2.cge3wy8cu4rk.us-east-2.rds.amazonaws.com"
             - name: DB_NAMA
-              value:"indra2"
+              value:"dbwpstaging"
             - name: DB_PENGGUNA
               valueFrom:
                 secretKeyRef:
