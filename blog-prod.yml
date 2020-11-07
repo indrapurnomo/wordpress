@@ -37,9 +37,9 @@ spec:
         - containerPort: 80
         env:
             - name: DB_RDS
-              value:"production.cge3wy8cu4rk.us-east-2.rds.amazonaws.com"
+              value: "production.cge3wy8cu4rk.us-east-2.rds.amazonaws.com"
             - name: DB_NAMA
-              value:"dbwp"
+              value: "dbwp"
             - name: DB_PENGGUNA
               valueFrom:
                 secretKeyRef:
