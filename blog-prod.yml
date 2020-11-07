@@ -44,7 +44,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: mysecretwp
-                  key: username
+                  key: user
             - name: DB_PASS
               valueFrom:
                 secretKeyRef:
