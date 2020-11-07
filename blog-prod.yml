@@ -32,23 +32,23 @@ spec:
     spec:
       containers:
       - name: wordpress-ku
-        image: indradock/indra-wp:4.0
+        image: indradock/blog-app
         ports:
         - containerPort: 80
         env:
             - name: DB_RDS
-              value:"indra.cge3wy8cu4rk.us-east-2.rds.amazonaws.com"
+              value:"production.cge3wy8cu4rk.us-east-2.rds.amazonaws.com"
             - name: DB_NAMA
-              value:"indra"
+              value:"dbwp"
             - name: DB_PENGGUNA
               valueFrom:
                 secretKeyRef:
-                  name: mysecret
+                  name: mysecretwp
                   key: username
             - name: DB_PASS
               valueFrom:
                 secretKeyRef:
-                  name: mysecret
+                  name: mysecretwp
                   key: password
                   
 ---
