@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: wordpress-ku
-        image: indradock/blog-app
+        image: indradock/blog-app:versi
         ports:
         - containerPort: 80
         env:
