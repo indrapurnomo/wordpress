@@ -36,10 +36,16 @@ spec:
         ports:
         - containerPort: 80
         env:
-            - name: DB_RDS
-              value: "production.cge3wy8cu4rk.us-east-2.rds.amazonaws.com"
+            - name: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: mysecretwp
+                  key: host
             - name: DB_NAMA
-              value: "dbwp"
+              valueFrom:
+                secretKeyRef:
+                  name: mysecretwp
+                  key: name
             - name: DB_PENGGUNA
               valueFrom:
                 secretKeyRef:
