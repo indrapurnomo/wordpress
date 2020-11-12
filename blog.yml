@@ -66,6 +66,7 @@ metadata:
   namespace: default
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
 spec:
   rules:
   - host: blog.indraku.online
